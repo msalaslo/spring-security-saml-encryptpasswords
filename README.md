@@ -1,1 +1,1 @@
-"# spring-security-saml-encryptpasswords" 
+The default Spring Security SAML implementation doesn’t provide a mechanism to “hide” key store and signing certificates passwords. In production environment is not a good idea that you show your passwords in plain text in the configuration files. In this post I describe a solution to keep them encrypted implementing some extra code. Aditionally, in order to improve the maintainability of the aplication, the passwords will be stored in a database.
